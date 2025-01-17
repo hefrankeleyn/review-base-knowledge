@@ -12,9 +12,9 @@ import java.util.concurrent.locks.ReentrantLock;
  * @Date 2025/1/17
  * @Author lifei
  */
-public class CreateThreadDemo {
+public class ThreadLockDemo {
 
-    private static final Logger log = LoggerFactory.getLogger(CreateThreadDemo.class);
+    private static final Logger log = LoggerFactory.getLogger(ThreadLockDemo.class);
     private boolean flag = false;
     private final Lock lock = new ReentrantLock();
     private final Condition condition = lock.newCondition();
